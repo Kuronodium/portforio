@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+.home-img {
+    
+    width:100vw;
+    height:100vh;
+    
+}
+
+.btn {
+    height:100%;
+    margin-left:10vw;
+    
+}
+
+.change {
+    position: absolute;
+    bottom:0;
+    right:0;
+    padding:5vw;
+    z-index:10;
+    height:30px
+}
+
+
+
+.home-place {
+    padding:5vh 5vw;
+    position: absolute;
+    bottom:0;
+}
+
+.bar-on {
+    height:2px;
+    width:40px;
+    background-color: white;
+    margin-right:10px;
+    float:left;
+    
+}
+
+.bar-off {
+    height:2px;
+    width:40px;
+    background-color:gray;
+    margin-right:10px;
+    float:left;
+}
