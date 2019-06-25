@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media screen and (max-width: 500px){
+    
+    h1{
+        font-size:16px;
+    }
+    
+    
+    h2{
+        font-size:16px;
+    }
+    
+    h3{
+        font-size:13px;
+    }
+    
+    h4{
+        font-size:13px;
+    }
+    
+    
+    p{
+        font-size:8px
+    }
+    
+    
+    .home-logo{
+        font-size:25px;
+        height:44px;
+        width:50px;
+        padding-top:6px;
+    }
+    
+    .menu{
+        font-size:12px;
+        height:26px;
+        width:140px;
+        right:-55px;
+    }
+    
+    
+    
+    .change{
+        height:30px
+    }
+    
+    
+    .bar-on{
+        width:25px;
+    }
+    
+    .bar-off{
+        width:25px;
+    }
+    
+    
+}
+    
+    
+    
+    
+    

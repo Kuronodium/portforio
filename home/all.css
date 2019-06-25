@@ -1,36 +1,75 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.all-work {
-    padding-top:5vh;
-    width:80vw;
-    float:right;
-    right:0px;
+
+body {
+    background-color:black;
+    color:white;
+    margin:0;
+    padding:0px;
+    font-weight:normal;
+    letter-spacing:0.3em;
+    
+    width:100vw;
+    z-index:1;
+    
+    -webkit-text-size-adjust: none;
+	
+	font-family: 'Sawarabi Gothic', sans-serif;
+font-family: 'Montserrat', sans-serif;
+}
+img {
+    margin:0px;
+    object-fit: cover;
+    
+    box-sizing:border-box;
+    overflow:hidden;
+    width:100%;
+    padding:0px;
+}
+div {
+    margin:0px;
+    padding:0px;
 }
 
-.all-work img {
-    width:50%;
-    float:left;
-    
-    
-}
 
+h1 {
+    font-size:19px;
+    letter-spacing:0.6em;
+    font-weight:lighter;
+    margin:0px;
+    
+}/* タイトル */
+h2 {
+    font-size:18px;
+    margin:15px 0px;
+}/* 概要、タイトル */
+h3 {
+    font-size:14px;
+    font-weight:normal;
+}/* 概要文 */
 h4 {
     line-height:200%;
     font-size:13px;
     font-weight: normal;
+}/* 説明文 */
+p {
+    margin:0px;
+    font-size:10px;
 }
+a {
+    color: white;
+    text-decoration: none ;
+}
+
+/* メニューやロゴ */
 .defo {
     
     width:100vw;
     position:fixed;
-    
     z-index:2;
-    
 }
-
 .home-logo {
-    
     text-align:center;
     vertical-align: middle;
     font-size: 20px;
@@ -46,7 +85,6 @@ h4 {
     
     border:solid 1px white;
 }
-
 .menu {
     text-align: center;
     font-size:10px;
@@ -62,72 +100,12 @@ h4 {
 	height:25px;
 	width:140px;
     
-    
-    
     background-color: rgba(0,0,0,0.10);
     
 	transform: rotate(90deg);
 }
 
-body {
-    background-color:black;
-    color:white;
-    margin:0;
-    padding:0px;
-    font-weight:normal;
-    letter-spacing:0.3em;
-    
-    width:100vw;
-    z-index:1;
-}
-
-h1 {
-    font-size:18px;
-    letter-spacing:0.6em;
-    font-weight:lighter;
-    line-height:1.5em;
-    margin:0px;
-    
-}
-
-
-
-img {
-    margin:0px;
-    object-fit: cover;
-    
-    box-sizing:border-box;
-    overflow:hidden;
-    width:100%;
-    padding:0px;
-}
-
-div {
-    margin:0px;
-    padding:0px;
-}
-
-h3 {
-    font-size:14px;
-    font-weight:normal;
-}
-
-h2 {
-    font-size:18px;
-    margin:15px 0px;
-}
-
-.title {
-    padding:7vh 5vw;
-    position: absolute;
-    bottom:0;
-}
-
-a {
-    color: white;
-    text-decoration: none ;
-}
-
+/* タイトル文字 */
 .home-title {
     position: absolute;
     z-index:3;
@@ -136,14 +114,27 @@ a {
     bottom:0px;
     background: linear-gradient(to bottom,rgba(0, 0, 0, 0.0), #000);
 }
+.title {
+    padding:7vh 5vw;
+    position: absolute;
+    bottom:0;
+}
 
 
+/* index */
+.all-work {
+    padding-top:5vh;
+    width:80vw;
+    float:right;
+    right:0px;
+}
+.all-work img {
+    width:50%;
+    float:left;
+    }
 
 
-
-
-/* 拾い物 */
-
+/* 拾い物の「もっと見る」*/
 .accordion-box {
     position: relative;
 }
@@ -207,15 +198,12 @@ a {
     -o-transition: all 0.1s;
     transition: all 0.1s;
 }
-
-
 .accordion-box input:checked + label {
     /* display: none ; 閉じるボタンは要らないとき */
 }
 .accordion-box input:checked + label:after {
     content: "close";
 }
-
 .accordion-box input:checked ~ .accordion-container {
     height: auto;
     padding-bottom: 80px; /* 閉じるボタンのbottomからの位置 */
@@ -225,7 +213,6 @@ a {
     -o-transition: all 0.1s;
     transition: all 0.1s;
 }
-
 /* 拾い物 */
 
 

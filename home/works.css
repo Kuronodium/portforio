@@ -1,5 +1,13 @@
 @charset "UTF-8";
 /* CSS Document */
+
+/* トップ画 */
+.front {
+    position:relative;
+    margin:0px;
+    height:100vh;
+    
+}
 .top {
     margin:0px;
     height:75vh;
@@ -7,6 +15,9 @@
     z-index:1;
     
 }
+
+
+/* 概要 */
 .about {
     
     padding:20px 5vw;
@@ -14,24 +25,47 @@
     margin-top:0vh;
     
 }
-
-p {
-    margin:0px;
-    font-size:10px;
-}
-
 .member {
     margin:50px 0px 0px;
     columns:500px;
 }
 
-.front {
-    position:relative;
-    margin:0px;
-    height:100vh;
-    
+
+/* 内容 */
+.contents {
+    width:100vw;
+    box-sizing:border-box;
+}
+.contents img{
+    padding-top:50px;
 }
 
+/* 画像の位置調整 */
+.x {
+    padding-left:15vw;
+}
+.xx{
+    padding-left:25vw;
+}
+.xxx {
+    padding-left:15vw;
+    padding-right:15vw;
+}
+.xxxx{
+    padding-right:25vw;
+}
+.xxxxx {
+    padding-right:15vw;
+}
+
+/* 解説文パート */
+.caption {
+    padding:50px 15vw 0;
+    width:70vw;
+}
+
+
+/* other projects */
 .other-works {
     
     padding:20px 5vw;
@@ -39,56 +73,15 @@ p {
     background-color: dimgrey;
     margin-top:50px;
 }
-
-
-.contents {
-    width:100vw;
-    box-sizing:border-box;
-}
-
-.contents img{
-    padding-top:50px;
-}
-
-
-
-.x {
-    padding-left:15vw;
-}
-
-.xx{
-    padding-left:25vw;
-}
-
-.xxx {
-    padding-left:15vw;
-    padding-right:15vw;
-}
-
-.xxxx{
-    padding-right:25vw;
-}
-
-.xxxxx {
-    padding-right:15vw;
-}
-
-
-
-
 .other-img {
     height:300px;
     object-fit: cover;
     margin-bottom: 20px
 }
-
 .other-watch {
     position:
 }
 
-.caption {
-    padding:50px 15vw 0;
-    width:70vw;
-}
+
 
 
