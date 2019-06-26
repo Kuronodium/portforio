@@ -29,10 +29,8 @@
 
 
 /* 背景画像 */
-.home-img {
-    
-    height:100%;
-    
+.home {
+	height:100vh;
 }
 
 
@@ -76,6 +74,4 @@
 
 
 
-.home {
-	height:100vh;
-}
+
