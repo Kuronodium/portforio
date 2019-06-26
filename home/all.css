@@ -296,7 +296,7 @@ header {
   max-width:70vh;/*最大幅（調整してください）*/
   height: 100%;
   background:white;/*背景色*/
-  transition: .3s ease-in-out;/*滑らかに表示*/
+  transition: 1s ease-in-out;/*滑らかに表示*/
   -webkit-transform: translateX(105%);
   transform: translateX(105%);/*左に隠しておく*/
 }
