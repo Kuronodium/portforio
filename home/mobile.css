@@ -31,6 +31,7 @@
         height:35px;
         width:40px;
         padding-top:4px;
+		
     }
     
     .menu{
@@ -40,10 +41,17 @@
         right:-55px;
     }
     
+	
+	.title {
+    padding:10vh 5vw;
+}
+	.home-place {
+    padding:8vh 5vw;
+}
     
     
     .change{
-        height:25px
+        height:25px;
     }
     
     
