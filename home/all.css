@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
+html {
+	height:100%;
+}
 
 
 body {
@@ -81,8 +84,10 @@ a {
     width:40px;
     margin:5vw;
     position: absolute;
+	
+	z-index:3;
     
-    padding-top:5px;
+    padding-top:4px;
     
 	color:gray;
     border:solid 1px gray;
@@ -111,7 +116,6 @@ a {
 /* タイトル文字 */
 .home-title {
     position: absolute;
-    z-index:3;
     height:40vh;
     width:100vw;
     bottom:0px;
@@ -216,10 +220,109 @@ a {
     -o-transition: all 0.1s;
     transition: all 0.1s;
 }
-/* 拾い物 */
+
+
+/* 拾い物の「メニュー」*/
+
+header {
+	height:0px;
+}
+
+#nav-drawer {
+  position: relatve;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*アイコン*/
+#nav-open span, #nav-open span:before { text-align: center;
+    font-size:10px;
+    
+    position: absolute;
+    padding-top:10px;
+    
+    
+	margin-top: 50vh;
+    top:0px;
+    right:-54px;
+    
+	height:25px;
+	width:140px;
+    
+    background-color: rgba(0,0,0,0.10);
+    
+	transform: rotate(90deg);
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 2;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;/*最前面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width:70vh;/*最大幅（調整してください）*/
+  height: 100%;
+  background:white;/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(105%);
+  transform: translateX(105%);/*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .6;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
 
 
 
-html {
-	height:100%;
+.in-menu {
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%) ;
+}
+
+.in-menu a {
+	color:black;
 }
