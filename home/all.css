@@ -84,7 +84,7 @@ a {
     
     height:34px;
     width:40px;
-    margin:5vw;
+    margin:5vh 5vw;
     position: absolute;
 	
 	z-index:10;
@@ -327,7 +327,7 @@ header {
 	max-width:300px;
 	height:200px;
 	width:50vw;
-	margin:20px;
+	margin:0 20px 40px;
 	
 
 }
